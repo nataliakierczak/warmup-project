@@ -1,10 +1,12 @@
 <?php
-class Actors_Object
+
+class User_Object
 {
     public function getUrl()
     {
-        return url::to('actor', array(
+        return url::to('users', array(
             'id' => $this->id
         ));
     }
+
 }
