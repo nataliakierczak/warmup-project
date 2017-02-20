@@ -1,16 +1,10 @@
 <div class="row">
     <div class="col-md-8">
 
-        <?php echo $pictures; ?>
+        <?php echo $tasks; ?>
 
-        <?php echo $details; ?>
-
-        <?php echo $born_today; ?>
+        <?php echo $users; ?>
 
     </div>
-    <div class="col-md-3">
-        <?php echo $right_menu; ?>
-
-        <?php echo $actors; ?>
-    </div>
+    
 </div>
