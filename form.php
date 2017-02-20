@@ -4,17 +4,27 @@ $data= array (
 'name'=> $_POST['name'],
 'description' => $_POST['description'],
 'added-by' => $_POST['added-by'],
-'selected-by' => $_POST['selected-by'],
-'completed' => $_POST['completed'],
+'assigned-to' => $_POST['assigned-to'],
+
 );
 
 insert_data($data);
+}
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
 
-<form action="" method="post">
-
-
+<h2>Insert the task details</h2>
+Task name:
+<input type= "text" name="name">
+<br><hr>
 
 Description:
 <textarea name="description" id="" cols="30" rows="10"></textarea>
@@ -31,7 +41,7 @@ Added by:
 <br><hr>
 
 Selected by: 
-<select name="selected-by">
+<select name="assigned-to">
 <option value="Aniko">Aniko</option>
 <option value="Ezequiel">Ezequiel</option>
 <option value="Mohamed">Mohamed</option>
@@ -40,11 +50,10 @@ Selected by:
 </select>
 <br><hr>
 
-Completed:
-<input type="checkbox" name="completed">
-<br><hr>
 
 <input type="submit" value="Submit the task">
 <br><hr>
 </form>
 
+</body>
+</html>
