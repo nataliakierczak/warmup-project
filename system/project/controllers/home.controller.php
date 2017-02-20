@@ -1,6 +1,5 @@
 <?php
 
-//form
 $description = request::post('description', '');
 $added_by = request::post('added_by', '');
 $selected_by = request::post('selected_by', '');
