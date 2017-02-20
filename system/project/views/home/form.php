@@ -1,17 +1,3 @@
-<?php
-if (!empty($_POST)) {
-$data= array (
-'name'=> $_POST['name'],
-'description' => $_POST['description'],
-'added-by' => $_POST['added-by'],
-'assigned-to' => $_POST['assigned-to'],
-
-);
-
-insert_data($data);
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
