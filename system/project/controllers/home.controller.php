@@ -1,14 +1,14 @@
 <?php
 
-//form
-$description = request::post('description', '');
-$added_by = request::post('added_by', '');
-$selected_by = request::post('selected_by', '');
-
 $form_view = new view('home/form');
 $form_view->description = $description;
 $form_view->added_by = $added_by;
 $form_view->selected_by = $selected_by;
+
+//form
+$description = request::post('description', '');
+$added_by = request::post('added_by', '');
+$selected_by = request::post('selected_by', '');
 
 //page
 $page_layout = new view('home/page_layout');
