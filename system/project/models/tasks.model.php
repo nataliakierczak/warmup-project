@@ -8,12 +8,12 @@ class Tasks_Model extends model
     {
         // write query
         $query = "
-            INSERT INTO task (name, description, added_by, assigned_to)
+            INSERT INTO task (name, description, added_by, selected_by)
             VALUES (?, ?, ?, ?)
             
         ";
         // execute query
-        $resultset = db::query($query, [$name, $description, $added_by, $assigned_to]);
+        $resultset = db::query($query, [$name, $description, $added_by, $selected_by]);
 
         return $objects;
     }
