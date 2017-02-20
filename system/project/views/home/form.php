@@ -17,7 +17,7 @@ Description:
 <br><hr>
 
 Added by: 
-<select name="added-by">
+<select name="added_by">
 <option value="Aniko">Aniko</option>
 <option value="Ezequiel">Ezequiel</option>
 <option value="Mohamed">Mohamed</option>
@@ -27,7 +27,7 @@ Added by:
 <br><hr>
 
 Selected by: 
-<select name="assigned-to">
+<select name="selected_by">
 <option value="Aniko">Aniko</option>
 <option value="Ezequiel">Ezequiel</option>
 <option value="Mohamed">Mohamed</option>
