@@ -1,10 +1,5 @@
-<div class="row">
-    <div class="col-md-8">
+<div>
+        
+        <?php echo $form_view; ?>
 
-        <?php echo $tasks; ?>
-
-        <?php echo $users; ?>
-
-    </div>
-    
 </div>

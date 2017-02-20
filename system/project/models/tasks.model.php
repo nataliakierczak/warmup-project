@@ -2,18 +2,18 @@
 
 class Tasks_Model extends model
 {
-    protected static $task_class = 'Task_Object';
+    protected static $object_class = 'Task_Object';
 
-    public static function setTask($id, $name, $email)
+    public static function setTask($description, $selected_by, $added_by)
     {
         // write query
         $query = "
-            INSERT INTO task (id, name, description, created_date, added_by, selected_by, completed)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO task (description, selected_by, added_by)
+            VALUES (?, ?, ?)
             
         ";
         // execute query
-        $resultset = db::query($query, [$id, $name, $description, $created_date, $added_by, $selected_by, $completed]);
+        $resultset = db::query($query, array($description, $selected_by, $added_by));
 
         return $objects;
     }
