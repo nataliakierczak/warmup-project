@@ -9,25 +9,13 @@ Description:
 <textarea name="description" id="" cols="30" rows="10"></textarea>
 <br><hr>
 
-Added by: 
-<select name="added_by">
-<option value="Aniko">Aniko</option>
-<option value="Ezequiel">Ezequiel</option>
-<option value="Mohamed">Mohamed</option>
-<option value="Natalia">Natalia</option>
-<option value="Tomomi">Tomomi</option>
-</select>
+Added by:
+    <input type= "text" name="added_by">
 <br><hr>
 
-Selected by: 
+Selected by:
 
-<select name="selected_by">
-<option value="Aniko">Aniko</option>
-<option value="Ezequiel">Ezequiel</option>
-<option value="Mohamed">Mohamed</option>
-<option value="Natalia">Natalia</option>
-<option value="Tomomi">Tomomi</option>
-</select>
+    <input type= "text" name="selected_by">
 <br><hr>
 
 Completed:
